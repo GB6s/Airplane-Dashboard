@@ -1,0 +1,19 @@
+# Prisma Migrate lockfile v1
+
+20201010031753-initial
+20201010060511-make-name-required
+20201018014956-require-discord-id
+20201018015048-discord-id-string
+20201018025132-remove-password
+20201018211501-add-stripe-id
+20201018213143-add-avatar-field
+20201018221046-user-payment-info
+20201018221428-user-payment-user
+20201026020856-add-instance-model
+20201027073602-add-card-brand
+20201203134800-subscription-id
+20201203190525-removed-user-payment-info
+20201205175209-instance-naming
+20201221202314-last-paid-field-instances
+20201221205025-optional-last-paid
+20201225130110-stripe-id-session

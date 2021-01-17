@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: web
+    restart: unless-stopped
+    volumes:
+      - ./:/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - influxdb
+  influxdb:
+    image: quay.io/influxdb/influxdb:v2.0.3
+    container_name: influxdb
+    restart: unless-stopped
+    environment:
+      INFLUXDB_DB: dashboard
+      INFLUXDB_HTTP_AUTH_ENABLED: "false"
+    volumes:
+      - ./influxdb/scripts/:/docker-entrypoint-initdb.d/
+    ports:
+      - 8086:8086

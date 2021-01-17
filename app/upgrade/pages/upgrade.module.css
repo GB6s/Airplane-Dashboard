@@ -1,0 +1,14 @@
+.planTitle {
+  font-weight: 500;
+}
+
+.feature {
+  display: flex;
+  align-items: baseline;
+
+  padding-bottom: 1rem;
+}
+
+.feature > i {
+  padding-right: 0.5rem;
+}
