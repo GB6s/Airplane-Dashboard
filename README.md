@@ -16,6 +16,7 @@ A dashboard for Airplane.gg, a startup specialized in performance oriented gamin
 ### Real Time Analytics
 
 To provide our clients with real time analytics concerning their servers we use **InfluxDB**. An API endpoint allows our product to send data back to our back-end for analytic purposes. This data is then processed and stored in our TSDB. The data stored is then queried upon request and served to our clients in a easy to use graph.
+
 <img src="https://i.imgur.com/x6WUvlV.png" height="300">
 
 ## Dockerized
